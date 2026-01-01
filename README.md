@@ -1,4 +1,4 @@
-# GsubA - FusionShell Version4 - Windows Appliance Server - ForCleanDedicatedStart - Up and Running in 5mins or less on a new Windows Server or VM
+# GsubA - FusionShell Version25 - Linux or Windows Appliance Panel Site Server Portal Software - ForCleanDedicatedStart - Up and Running in 5mins or less on a new Windows Server or VM
 
 PLATFORM REQUIREMENTS<BR>
 This platform requires a working webserver with PHP enabled. We support NGINX, Apache, or IIS, with the latter two recommended. (NGINX is very robust but requires
