@@ -1,5 +1,16 @@
 # GsubA - FusionShell Version25 - Linux or Windows Appliance Panel Site Server Portal Software - ForCleanDedicatedStart - Up and Running in 5mins or less on a new Windows Server or VM
 
+MAJOR CHANGES FROM V4 SOFTWARE
+From V4 to V25O....
+New Bootstrap Formatted Template Pages.
+New Out of the Box Working SSO & UserProfile Pages from localuser.json. If you choose to ignore Joomla you have that option now.
+Updated Installer Instructions.
+Improved Menu Navigation Top and Bottom.
+Notice of EOL of Version4 Software - Calendar Year 26.
+Updated Installation Instructions.
+Login/Logout PHP Pages.
+Contact Forms for Each Major Division Page using Linux/Sendmail.
+
 PLATFORM REQUIREMENTS<BR>
 This platform requires a working webserver with PHP enabled. We support NGINX, Apache, or IIS, with the latter two recommended. (NGINX is very robust but requires
 expert Linux/Windows Administration help). [If you need help - To get help with these tasks we recommend installing Ubuntu linux, and simply search for Apache & PHP install Ubuntu and you will find hundreds of instruction sets which are workable. Ubuntu 16.04+ is very stable and available on G.Cloud, Amazon Cloud, and Microsoft Azure Cloud]
