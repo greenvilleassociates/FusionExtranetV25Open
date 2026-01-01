@@ -2,12 +2,12 @@
 
 PLATFORM REQUIREMENTS<BR>
 This platform requires a working webserver with PHP enabled. We support NGINX, Apache, or IIS, with the latter two recommended. (NGINX is very robust but requires
-expert Linux/Windows Administration help). [If you need help - To get help with these tasks we recommend installing Ubuntu linux, and simply search for Apache & PHP install Ubuntu and you will find hundreds of instruction sets which are workable. Ubuntu 16.04 is very stable and available on G.Cloud, Amazon Cloud, and Microsoft Azure Cloud]
-
+expert Linux/Windows Administration help). [If you need help - To get help with these tasks we recommend installing Ubuntu linux, and simply search for Apache & PHP install Ubuntu and you will find hundreds of instruction sets which are workable. Ubuntu 16.04+ is very stable and available on G.Cloud, Amazon Cloud, and Microsoft Azure Cloud]
+Alternatively we suggest buying a shared cPanel Server which averages about 25.00 a month and then its very easy to install our application and others.
 
 REPOSITORY OVERVIEW
 
-Greenville Associates Fusion Shell 4 - Linux or Windows Appliance Server with Apache Web Services & Mysql 5.7 Community & PHP 5.6
+Greenville Associates Fusion Shell V4/V25.O+ - Linux or Windows Appliance Server with Apache Web Services & Mysql 5.7 Community & PHP 5.6
 (For Clean Installs - For Existing Platforms and web servers we recommend Version 2)
 
 This shell provides a Open Platform Targeted Windowing System(On Windows/Linux/Unix) to provide javascript, HML5, PHP, Custom Microsoft(.ASPX), and Adobe Cold Fusion binaries to work in an integrated web framework. The Shell also hides the complexity of the software solution from the search bar, making it much friendlier to computer security architects. The shell works with IIS, Apache, and NGINX web servers without modification and links to any database platform supported by your web server. The First release
