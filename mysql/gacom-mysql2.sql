@@ -1,0 +1,21 @@
+create database gacomshop;
+create database gacomwp;
+create database gacomwp2;
+create database gacomh;
+create database gacomcms;
+create database gacomwiki;
+grant all on gacomshop.* to 'sa'@'localhost';
+grant all on gacomwp.* to 'sa'@'localhost';
+grant all on gacomwp2.* to 'sa'@'localhost';
+grant all on gacomh.* to 'sa'@'localhost';
+grant all on gacomcms.* to 'sa'@'localhost';
+grant all on gacomwiki.* to 'sa'@'localhost';
+use gacomshop;
+SET NAMES 'latin1';
+ALTER DATABASE gacomshop CHARACTER SET 'latin1';
+create user 'sa'@'localhost' identified by 'test1';
+set character_set_system = 'latin1';
+SHOW CHARACTER SET;
+SHOW VARIABLES WHERE Variable_name LIKE 'character\_set\_%' OR Variable_name LIKE 'collation%';
+ALTER USER 'sa1'@'localhost' IDENTIFIED WITH mysql_native_password
+BY 'test1';  

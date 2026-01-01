@@ -1,0 +1,41 @@
+FusionShell Version 4 For Windows Server/Windows Workstation:
+
+System Requirements:
+(4GB of RAM/8GB Recommended)
+(Clean WebServer Recommended but not required)
+(Windows7/10/(Server2012R2 or later) Fully Patched from WindowsUpdate)
+DotNet4.82
+(Recommended Intel Processor 2.66MHZ Core Duo or Better(i5/i7/i9).
+OPTIONAL
+(Adobe ColdFusion Server 2018 or Later Licensed Appropriately)
+
+This program installs Fusionshell Version 4 which includes one copy of Joomla CMS, one copy of Drupal CMS, and three copies of Wordpress (Forums, Corporate, and eCommerce).  It also includes a copy of TomatoCart Shop which requires PHP Version 5.6 to work.
+
+Choice of Databases ? (Postgres SQL, MariaDB or MySQL Opensource Platforms)
+
+If you use Mysql/MariaDB or Postgres DBMS, then you need to create four databases just for the front end-environment, or four sets of tables inside a single database using different table names ask your administrator what he or she recommends. 
+
+No Pre-Installed DBMS Support
+At this point in time, we are not going to install the DBMS install for our user community because we do not have a general agreement from the manufacturers of those programs to alter the basic uses of their products. 
+
+As installed they are unaltered except we have provided appropriate plugins to allow you to reach your stated goals much faster.
+
+Our Programs however include the Microsoft Platform Installer which makes step2 easy to use.
+
+How do you install MySQL or Postgres using Microsoft Platform Installer?
+
+In the DBMS install Directory, the Microsoft Platform installer is included. Click on the installer.msi executable, and it will give you all the options to include with a Windows Web Server including Mysql, and Postgres SQL. In order to use our product you need the following things from the Platform installer:
+
+1) Mysql Version 5.3 or later.
+2) PHP For IIS Server
+3) IIS Express Version 8.0 or later
+4) PHP Manger for IIS Server
+
+You need to let Microsoft install these programs for you if you do not know how yourself using the Platform installer. It will download, and extract patched files, and include them with your IIS Server.
+
+Housekeeping tasks
+5) You must create an appropriate Intranet or Extranet Website in IIS for Fusionshell. (eg http://www.acmeroofing.com/)
+6) We recommend you create a mobile IIS site as well such as m.acmeroofing.com (which should point to the c:\inetpub\webroot\greenville\fusionshell\mobile\ directory)
+7) You need to set the default directory to be c:\inetpub\webroot\greenville\
+8) You need to copy a few files in the root which will load ssl and repoint to your website within 0-X seconds.
+9) You have to create a PHP Handler inside your IIS Website for all .php extended files, and reference the CGIHandler Module with a pointer to the PHP Version you installed in #4 above. (Usually C:\ProgramFiles\PHP\V8.0\php-cgi.exe or similar) ?.

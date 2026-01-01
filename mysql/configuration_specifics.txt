@@ -1,0 +1,5 @@
+Install Mysql5.6 or Mysql 8.0.
+Install Mysql Workbench.
+Login into your Mysql Server.
+Execute the SQL Command as attached.
+Take note of the database names and username.

@@ -1,0 +1,13 @@
+create database gacomshop;
+create database gacomwp;
+create database gacomwp2;
+create database gacomh;
+create database gacomcms;
+create database gacomwiki;
+grant all on gacomshop.* to gacom_sa;
+grant all on gacomwp.* to gacom_sa;
+grant all on gacomwp2.* to gacom_sa;
+grant all on gacomh.* to gacom_sa;
+grant all on gacomcms.* to gacom_sa;
+grant all on gacomwiki.* to gacom_sa;
+ALTER DATABASE databasename CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
