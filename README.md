@@ -10,6 +10,7 @@ Notice of EOL of Version4 Software - Calendar Year 26.
 Updated Installation Instructions.
 Login/Logout PHP Pages.
 Contact Forms for Each Major Division Page using Linux/Sendmail.
+Added Marketwatch to Menu System.
 
 PLATFORM REQUIREMENTS<BR>
 This platform requires a working webserver with PHP enabled. We support NGINX, Apache, or IIS, with the latter two recommended. (NGINX is very robust but requires
