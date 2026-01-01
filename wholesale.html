@@ -1,9 +1,124 @@
-<HTML>
-<BODY>
-<BR><BR>
-<p align=center><img src="./acmelogo.gif" width=300px height=100px></p>
-<BR><BR>
-<div align=center><H3><font color=RED>@WHOLSALE CUSTOMERS OF ACME CONSTRUCTION</font></H3></div>
-Any About Page. Using Any Source Code Type including Wordpress, Colfusion(.CFM), ASPX, React Native, PHP, Java and Joomla templates.
-</BODY>
-</HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wholesale Customers – ACME Construction</title>
+
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+    >
+
+    <style>
+        .pagetransitions {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+<body class="pagetransitions">
+
+<div class="container py-5">
+
+    <!-- Logo -->
+    <div class="text-center mb-4">
+        <img src="./acmelogo.gif" width="300" height="100" alt="ACME Logo">
+    </div>
+
+    <!-- Header -->
+    <h3 class="text-center text-danger mb-4">
+        WHOLESALE CUSTOMERS OF ACME CONSTRUCTION
+    </h3>
+
+    <!-- Wholesale Info -->
+    <p class="text-center mb-4 text-muted">
+        Any About Page. Using Any Source Code Type including Wordpress, ColdFusion (.CFM), ASPX, React Native, PHP, Java and Joomla templates.
+    </p>
+
+    <!-- Wholesale Inquiry Form -->
+    <div class="card shadow-sm mx-auto" style="max-width: 700px;">
+        <div class="card-body">
+
+            <h5 class="mb-3 text-center">Wholesale Inquiry Form</h5>
+
+            <form action="sendmessage.php" method="POST">
+
+                <div class="mb-3">
+                    <label for="company" class="form-label fw-bold">Company Name</label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="company" 
+                        name="company" 
+                        placeholder="Enter your company name"
+                        required
+                    >
+                </div>
+
+                <div class="mb-3">
+                    <label for="contact" class="form-label fw-bold">Contact Person</label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="contact" 
+                        name="contact" 
+                        placeholder="Full name"
+                        required
+                    >
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label fw-bold">Email Address</label>
+                    <input 
+                        type="email" 
+                        class="form-control" 
+                        id="email" 
+                        name="email" 
+                        placeholder="name@example.com"
+                        required
+                    >
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone" class="form-label fw-bold">Phone Number</label>
+                    <input 
+                        type="tel" 
+                        class="form-control" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="(555) 123‑4567"
+                    >
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label fw-bold">Wholesale Request Details</label>
+                    <textarea 
+                        class="form-control" 
+                        id="message" 
+                        name="message" 
+                        rows="5" 
+                        placeholder="Tell us what wholesale products or pricing you are interested in."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-danger w-100">
+                    Submit Wholesale Request
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+[
+    {
+      "uid": "1001",
+      "firstname": "John",
+      "lastname": "Doe",
+      "fullname": "John Doe",
+      "email": "john@acme.com",
+      "password": "test1234",
+      "activepictureurl": "images/profile1.png"
+    },
+    {
+      "uid": "1002",
+      "firstname": "Jane",
+      "lastname": "Smith",
+      "fullname": "Jane Smith",
+      "email": "jane@acme.com",
+      "password": "test1234",
+      "activepictureurl": "images/profile2.png"
+    }
+  ]
+  
+  

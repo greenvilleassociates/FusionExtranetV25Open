@@ -31,29 +31,58 @@ body {
   background-color: #4CAF50;
   color: Green;
 }
+
+/* Right-side container */
+.topnav .right {
+  float: right;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* <-- This controls spacing between items */
+}
+
+/* Profile picture */
+.profile-pic {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Login/Logout icons */
+.icon-btn {
+  width: 60px;
+  height: 20px;
+  padding: 1px 1px;
+}
+
 </style>
 </head>
 <body>
 
 <div class="topnav">
-<a class="logo" href="#home"><img src="logo.png" width="30px" height="30px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a> 
- <a class="logo" href="#home">[V25.01]&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>   
- <a class="active" href="homepage.html" target="body2">Home</a>
-  <a href="https:\\www.reuters.com" target="body2">@R.News</a>
-  <a href="contact.html" target="body2">Contact</a>
+
+  <!-- Left side -->
+  <a class="logo" href="#home">
+    <img src="logo.png" width="30px" height="30px">&nbsp;&nbsp;
+  </a> 
+  <a class="logo" href="#home">[V25.01]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>   
+
+  <a class="active" href="homepage.html" target="body2">Home</a>
   <a href="about.html" target="body2">About</a>
+  <a href="contact.html" target="body2">Contact</a>
+  <a href="https://www.marketwatch.com/" target="body2">MarketWatch</a>
   <a href="./w2/index.php" target="body2">@Shop</a>
   <a href="./w3/index.php" target="body2">@G.Forums</a>
   <a href="./wiki/index.php" target="body2">@G.Wiki</a>
   <a href="./w/index.php" target="body2">@G.News</a>
   <a href="./h/index.php" target="body2">@Products</a>
- <a href="./cms/index.php" target="body2">@Research</a>
- <a href="./shop/index.php" target="body2">@Press</a>
-</div>
+  <a href="./cms/index.php" target="body2">@Research</a>
+  <a href="./shop/index.php" target="body2">@Press</a>
+  <a href="profile.html" target="body2" title="Your Profile"><img src="images/fusionshell25open.png" class="profile-pic" alt="Profile"></a>
+  <a href="profile.html" target="body2" title="Login">Profile</a>
+  <a href="login.php" target="body2" title="Login">Login</a>
+  <a href="logout.php" target="body2" title="Logout">Logout</a>
 
-<div style="padding-left:16px">
-  <h2>Top Navigation Example</h2>
-  <p>Some content..</p>
 </div>
 
 </body>

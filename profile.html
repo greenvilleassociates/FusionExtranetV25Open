@@ -1,74 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-}
+    <meta charset="UTF-8">
+    <title>User Profile</title>
 
-.title {
-  color: grey;
-  font-size: 18px;
-}
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+    >
 
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: blue;
-}
-
-button:hover, a:hover {
-  opacity: 0.7;
-}
-</style>
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        .profile-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ccc;
+        }
+    </style>
 </head>
+
 <body>
 
-<h2 style="text-align:center">User Profile Card</h2>
+<div class="container py-5">
 
-<div class="card">
-  <img src="toni2.PNG" alt="John" style="width:100%">
-  <h1>Angel Smith</h1>
-  <p class="title">CEO & Founder, CockyEnterprises</p>
-  <p>MS University of South Carolina</p>
-  <p>Address1</p>
-  <p>Address2</p>
-  <p>Columbia, SC 29201</p>
-  <p>843.352.3459</p>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-instagram"></i></a>
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
-    <a href="#"><i class="fa fa-facebook"></i></a> 
-  </div>
-  
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-instagram"></i></a><button id="b01" name="button1">Update</button><BR> 
-    <a href="#"><i class="fa fa-twitter"></i></a><button id="b02" name="button2">Update</button><BR>  
-    <a href="#"><i class="fa fa-linkedin"></i></a><button id="b03" name="button3">Update</button><BR>  
-    <a href="#"><i class="fa fa-facebook"></i></a><button id="b04" name="button4">Update</button><BR> 
-  </div>
-  <p><button id="b05" name="button5">Contact</button></p>
-  <p><button id="b06" name="button6"><a href="login.html">Login</a></button></p>
+    <div class="text-center mb-4">
+        <h2>Your User Profile</h2>
+    </div>
+
+    <div class="card shadow-sm mx-auto" style="max-width: 500px;">
+        <div class="card-body text-center">
+
+            <!-- Profile Picture -->
+            <img id="profilePic" class="profile-pic mb-3" src="./images/default-profile.png" alt="Profile Picture">
+
+            <h4 id="fullname"></h4>
+            <p class="text-muted mb-4" id="email"></p>
+
+            <table class="table table-bordered text-start">
+                <tr>
+                    <th>User ID</th>
+                    <td id="uid"></td>
+                </tr>
+                <tr>
+                    <th>First Name</th>
+                    <td id="firstname"></td>
+                </tr>
+                <tr>
+                    <th>Last Name</th>
+                    <td id="lastname"></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
 </div>
+
+<script>
+// Load values from localStorage
+document.getElementById("uid").innerText = localStorage.getItem("uid") || "Not set";
+document.getElementById("fullname").innerText = localStorage.getItem("fullname") || "Not set";
+document.getElementById("firstname").innerText = localStorage.getItem("firstname") || "Not set";
+document.getElementById("lastname").innerText = localStorage.getItem("lastname") || "Not set";
+document.getElementById("email").innerText = localStorage.getItem("email") || "Not set";
+
+const picUrl = localStorage.getItem("activepictureurl") || "";
+document.getElementById("activepictureurl").innerText = picUrl;
+
+// Set profile picture
+if (picUrl !== "") {
+    document.getElementById("profilePic").src = picUrl;
+} else {
+    document.getElementById("profilePic").src = "./images/default-profile.png"; // optional fallback
+}
+</script>
 
 </body>
 </html>
+
