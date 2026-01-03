@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>System Requirements</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+    >
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5 mb-5">
+
+    <div class="card shadow-sm">
+        <div class="card-header bg-dark text-white">
+            <h3 class="mb-0">System Requirements</h3>
+        </div>
+
+        <div class="card-body">
+
+            <h4 class="fw-bold mt-3">General Requirements</h4>
+            <ul>
+                <li>Webserver with PHP enabled.</li>
+                <li>PHP configured with your SQL drivers (Postgres, MySQL, SQL Server, Oracle, SQLite, etc.).</li>
+            </ul>
+
+            <hr>
+
+            <h4 class="fw-bold mt-4">Installation Requirements — Windows Server</h4>
+            <h5>Windows IIS Web Server with PHP Manager and PHP 8.x</h5>
+
+            <ul>
+                <li>1) Go to PHP.net and download the latest ZIP. Create a directory under <strong>C:\Program Files\PHP\V8.x</strong> and extract the ZIP.</li>
+                <li>2) In Windows Server Manager, add .NET 3.5 and 4.5, and include CGI Tools.</li>
+                <li>3) Download PHP Manager for Windows (MIT Open Source), version 2.x or later.</li>
+                <li>4) In PHP Manager, register the new version of PHP located at <strong>C:\Program Files\PHP\V8.x\php.exe</strong> or <strong>php.dll</strong>.</li>
+            </ul>
+
+            <hr>
+
+            <h4 class="fw-bold mt-4">Installation Requirements — Linux</h4>
+            <h5>Apache or Nginx with PHP / PHP‑FPM</h5>
+
+            <ul>
+                <li>Depending on your Linux distribution, install PHP using <strong>apt-get install php</strong> (Debian/Ubuntu) or <strong>yum/dnf install php</strong> (RedHat/CentOS/Oracle Linux).</li>
+                <li>We recommend installing Webmin, which supports Apache out of the box and Nginx with custom configuration options.</li>
+                <li>Nginx requires a custom PHP‑FPM configuration. See DigitalOcean’s tutorial for guidance.</li>
+                <li>For beginners, cPanel servers are recommended because they include complex PHP configurations already working with Apache.</li>
+            </ul>
+
+            <hr>
+
+            <h4 class="fw-bold mt-4">Installation Requirements — macOS</h4>
+            <h5>Apache with PHP</h5>
+
+            <ul>
+                <li>1) Older versions of macOS include PHP with Apache. Uncomment PHP in <strong>/etc/apache2/httpd.conf</strong>.</li>
+                <li>2) Newer macOS versions do not include PHP. Install MacPorts or Homebrew, then run <strong>port install php</strong> or <strong>brew install php</strong>.</li>
+                <li>3) Enable PHP in Apache using <strong>a2enmod mod_php</strong> (varies by version). Many tutorials are available online.</li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+<div align=center><a href="./h/index.html"><H5>CMS Details - Site Specific Configurations After PHP is Successfully Installed</H5></a></div>
+</body>
+</html>

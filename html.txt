@@ -1,0 +1,10 @@
+<html>
+<body>
+<h3>Installation Requirements Windows Server<h3>
+<p></p>
+<h3>Installation Requirements Linux</h3>
+<p></p>
+<h3>Installation Requirements MacOS</h3>
+<p></p>
+</body>
+</html>
