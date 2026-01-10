@@ -34,9 +34,9 @@ foreach ($required as $field) {
     }
 }
 
-// ----------------------------------------------------
-// 1. SAVE CONFIG FILE (your existing logic, unchanged)
-// ----------------------------------------------------
+// ---------------------------------------------------------
+// 1. SAVE CONFIG FILE (your existing logic)
+// ---------------------------------------------------------
 
 $targetDir = __DIR__ . "/installation/configuration/";
 
@@ -62,15 +62,18 @@ if (file_put_contents($configFile, $config) === false) {
     exit;
 }
 
-// ----------------------------------------------------
-// 2. CREATE LICENSE FILE (new functionality)
-// ----------------------------------------------------
+// ---------------------------------------------------------
+// 2. CREATE LICENSE FILE (new logic)
+// ---------------------------------------------------------
 
-// License directory
 $licenseDir = __DIR__ . "/installation/license/";
 
 if (!is_dir($licenseDir)) {
-    mkdir($licenseDir, 0775, true);
+    if (!mkdir($licenseDir, 0775, true)) {
+        http_response_code(500);
+        echo "Failed to create license directory.";
+        exit;
+    }
 }
 
 // GUID generator
@@ -99,8 +102,8 @@ $licenseContent =
     "date: $today\n" .
     "expiration: $expiration\n";
 
-// Write license file
-$licenseFile = $licenseDir . "license.fs25o";
+// Write license file as license.txt
+$licenseFile = $licenseDir . "license.txt";
 
 if (file_put_contents($licenseFile, $licenseContent) === false) {
     http_response_code(500);
@@ -108,7 +111,7 @@ if (file_put_contents($licenseFile, $licenseContent) === false) {
     exit;
 }
 
-// ----------------------------------------------------
+// ---------------------------------------------------------
 
 echo "Configuration and license saved successfully.";
 exit;
