@@ -54,7 +54,7 @@ foreach ($data as $key => $value) {
     $config .= "$key=$safeValue\n";
 }
 
-$configFile = $targetDir . "config.cfg";
+$configFile = $targetDir . "config.txt";
 
 if (file_put_contents($configFile, $config) === false) {
     http_response_code(500);
