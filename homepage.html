@@ -1,4 +1,4 @@
-<HTML>
+﻿<HTML>
 <HEAD>
 <style>
 
@@ -106,7 +106,7 @@ function checkInstall() {
             }
 
             const text = await response.text();
-
+	    console.log("text",text);
             if (!text.trim()) {
                 // Blank config → go to installer
                 window.location.href = "install.html";
