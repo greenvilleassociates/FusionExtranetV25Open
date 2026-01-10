@@ -81,7 +81,7 @@ They are still under development and are intended to be priced to market and are
 // 1. LICENSE CHECK
 // ---------------------------------------------------------
 function checkLicense() {
-    fetch("./installation/license/license.fs25o", { method: "HEAD" })
+    fetch("./installation/license/license.txt", { method: "HEAD" })
         .then(response => {
             if (!response.ok) {
                 alert("No License Installed. You have been granted a 30 day trial license");
