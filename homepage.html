@@ -97,7 +97,7 @@ function checkLicense() {
 // 2. INSTALLATION CHECK
 // ---------------------------------------------------------
 function checkInstall() {
-    fetch("./installation/configuration/config.cfg")
+    fetch("./installation/configuration/config.txt")
         .then(async response => {
             if (!response.ok) {
                 // Missing config → go to installer
