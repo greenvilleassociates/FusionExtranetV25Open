@@ -24,7 +24,9 @@ $userList = json_decode(file_get_contents("localuser.json"), true);
             <h3 class="text-center mb-4">Login</h3>
 
             <form id="loginForm">
-
+		<div class="mb-3">
+                    <span align="center"><img src="./images/fusionshell25open.png" width="100%" height="175px"></span>
+                </div>
                 <div class="mb-3">
                     <label class="form-label fw-bold">Email</label>
                     <input type="email" id="email" class="form-control" required>
